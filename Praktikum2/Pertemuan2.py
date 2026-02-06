@@ -168,11 +168,11 @@ def buka_file(nama_file):
     with open(nama_file,"r",encoding="utf-8") as file:
         for baris in file:
             baris = baris.strip() #Menghilangkan karakter baris baru
-        nim,nama,nilai = baris.split(",") #Memecah menjadi satuan dan manyimpannya dalam variabel
-        data_dict[nim] = {
-            "nama" : nama,
-            "nilai" : int(nilai)
-        }
+            nim,nama,nilai = baris.split(",") #Memecah menjadi satuan dan manyimpannya dalam variabel
+            data_dict[nim] = {
+                "nama" : nama,
+                "nilai" : int(nilai)
+                }
     return data_dict
 
 buka_data = buka_file(nama_file)
