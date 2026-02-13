@@ -34,6 +34,5 @@ class DoublyLinkedList:
             print(f"Elemen '{key}' tidak ditemukan dalam Doubly Linked List.")
 
 dll = DoublyLinkedList(None) #menyiapkan objek Doubly Linked List kosong
-dll = DoublyLinkedList(None) #menyiapkan objek Doubly Linked List kosong
 dll.insert_at_end(input("Masukkan elemen ke dalam Doubly Linked List: "))
 dll.search_node(input("Masukkan elemen yang ingin dicari: "))
