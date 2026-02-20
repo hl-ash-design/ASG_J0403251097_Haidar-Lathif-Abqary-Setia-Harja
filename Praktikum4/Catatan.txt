@@ -1,0 +1,23 @@
+Class :
+Property ==> Variabel (kata benda)
+Method ==> Fungsi-fungsi dalam Class (kata kerja)
+
+Nama Class: Mobil
+Properti:
+    Jumlah roda
+    Warna
+    Jumlah kursi
+Method  :
+    Mobil(Warna)
+
+    def __init__ (self)
+    
+    Melaju
+    Mengerem
+    Menampilkan_dashboard
+
+Instantiasi: Mengenalkan objek kepada Class agar objek tersebut bisa mengakses Class
+
+a.Mobil
+a.Mobil() ==> mengenalkan a kepada class Mobil
+a.Menampilkan_dashboard
