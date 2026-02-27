@@ -1,0 +1,34 @@
+#====================================================================================
+# Nama    : Haidar Lathif Abqary Setia Harja
+# NIM     : J0403251097
+# Kelas   : A2
+#====================================================================================
+
+#====================================================================================
+# Contoh Backtracking 2: kombinasi Biner dengan Batas '1' (Pruning)
+#====================================================================================
+
+def biner_batas(n, batas, hasil="", jumlah_1=0):
+    #Pruning: jika jumlah_1 sudah melewati batas, berhenti
+    if jumlah_1 > batas:
+        return
+    
+    #Base case
+    if len(hasil) == n:
+        print(hasil)
+        return
+    
+    #Pilih '0'
+    biner_batas(n, batas, hasil +"0", jumlah_1)
+
+    #Pilih '1'
+    biner_batas(n, batas, hasil + "1", jumlah_1 + 1)
+
+biner_batas(4, 2)
+
+'''
+Penjelasan:
+    Saat fungsi dijalankan. Base case akan mengecek parameter. Apabila tidak terpenuhi. Fungsi akan dilanjut dengan rekursi fungsi 
+    dengan parameter ditambah '0'. fungsi akan terus mengalami rekursi sampai base case terpenuhi dan fungsi 
+    terakhir memanggil rekursi akhir
+'''
